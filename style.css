@@ -104,7 +104,6 @@ a:hover {
 }
 
 
-
 nav {
     background-color: #d477ca;
     padding: 10px;
@@ -113,7 +112,11 @@ nav {
 nav a {
     color: white;
     margin-right: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
 }
+
 
 .header-img{
     max-width: 30%
@@ -141,4 +144,30 @@ nav a {
 .show-img{
     padding: 50px;
     max-width: 50%;
+}
+
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.option {
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.option:hover {
+    transform: scale(1.1);
 }
