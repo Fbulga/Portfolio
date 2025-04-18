@@ -132,7 +132,8 @@ nav a {
 
 .nav-vertical a {
     color: white;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-decoration: none;
     display: block;
 
