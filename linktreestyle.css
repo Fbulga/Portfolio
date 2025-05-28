@@ -1,10 +1,16 @@
+html{
+    height: 100%;
+} 
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    height: auto;
     text-align: center;
-    background-color: #191919;
     color: rgb(243, 243, 243);
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #357296, #0d1b24);
 }
+
 .button-container {
     padding-bottom: 1%;
 }
@@ -17,7 +23,7 @@ body {
     align-items: center;  
     display: inline-flex;  
     justify-content: center; 
-    background-color: #d6dee7;
+    background-color: #ffffff;
     transition: transform 0.2s ease-in-out;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -33,33 +39,39 @@ body {
 }
 
 ul{
+    padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
   list-style: none;
+  align-items: center;
+  flex-direction: column;
 }
 
 .linktree-anchor {
     height: 3rem;
-    width: 10rem;
+    width: 25%;
     margin: 1rem;
     display: flex;  
     color: #3c73ae;
     overflow: hidden;
     padding: 8px 12px;
-    border-radius: 25px;
+    border-radius: 10px;
     align-items: center;  
     text-decoration: none;
     justify-content: center; 
-    background-color: #d6dee7;
+    background-color: #ffffff;
     transition: transform 0.2s ease-in-out;
-    box-shadow: 20px 10px 6px rgba(170, 170, 170, 0.082);
+    box-shadow: 10px 10px 0px #428eb9;
 }
 
 
 .linktree-anchor:hover{
-    transform: scale(1.2);
-    background-color: #9ba0a8;
     color: white;
+    transform: scale(1.2);
+    background-color: #5ac2ff;
+}
+
+
+.mei_icon{
+    height: 2rem;
+    margin-right: 5px;
 }
