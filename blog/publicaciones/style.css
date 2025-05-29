@@ -17,6 +17,11 @@ body {
     position: fixed; 
     align-items: center;
     justify-content: center;
+    
+}
+h1{
+    margin: 0;
+    padding: 0.2rem;
 }
 
 .navbar-capsule {
@@ -52,29 +57,22 @@ body {
 }
 
 .main-content-container {
-    gap: 25px;
     display: flex;
+    flex-direction: column;
+    gap: 25px;
     padding: 25px 5%;
     margin-top: 90px;
-    align-items: center; 
-    flex-direction: column; 
+}
+
+@media (min-width: 1024px) {
+    .main-content-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
 
 .blog-column-left {
-    width: 100%; 
-    max-width: 600px;
-    max-height: 50rem;
-    flex-direction: grid; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.4fr 1fr;
-    gap: 5px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "article1 article1 article2"
-        "article1 article1 article2"
-        "article3 article4 article5";
-    
+    flex: 1;
 }
 
 .contact-column-right {
@@ -84,14 +82,14 @@ body {
     margin: 0; 
 }
 
-.blog_entry{
+.blog_entry {
     padding: 20px;
     margin-bottom: 0;
     border-radius: 15px;
     background-color: #555;
 }
 
-.blog_entry h2{
+.blog_entry h2 {
     padding: 0.5%;
     border-radius: 10px;
     background-color: #838383;
@@ -137,21 +135,6 @@ footer {
     object-fit: contain;
 }
 
-.entry_a{
-    color: white;
-}
-
-.title{
-    margin: 50px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-h1{
-    margin: 0;
-    padding: 0.2rem;
-}
-
 form {
     padding: 20px;
     max-width: 500px;
@@ -188,12 +171,11 @@ button:hover {
 }
 
 
-
 @media (min-width: 1024px) {
     .main-content-container {
-        flex-direction: row;
+        flex-direction: row; 
         align-items: flex-start;
-        padding: 25px 5%; 
+        padding: 25px 5%;
     }
 
     .blog-column-left {
@@ -230,6 +212,7 @@ button:hover {
     .navbar-capsule a {
         padding: 10px;
     }
+
     .navbar-capsule img{
         display: block;
     }
@@ -237,75 +220,13 @@ button:hover {
     .main-content-container {
         padding: 15px 3%;
     }
-
-    .front_page_img_text {
-        padding-left: 10px; 
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        bottom: 10px; 
-        right: 10px;
+    .contact-column-right{
+        padding-left: 0;
+        padding-right: 0;
     }
+        .contact-column-right h2 {
+        max-width: 100%;
+        margin: 10px;
 
-    .front_page_img_text h4 {
-        display: none;
     }
-
 }
-
-
-
-    
-
-
-.article1 {
-    grid-area: article1;
-    background-color: red;
-}
-
-.article2 { 
-    grid-area: article2;
-    background-color: green; 
-}
-
-.article3 { 
-    grid-area: article3;
-    background-color: blue; 
-}
-
-.article4 { 
-    grid-area: article4;
-    background-color: blueviolet; 
-}
-
-.article5 { 
-    grid-area: article5;
-    background-color: yellow; 
-}
-
-.front_page{
-    position: relative;
-
-}
-
-.front_page img{
-    transition: transform 3s ease;
-}
-.front_page:hover {
-    z-index: 10;
-    box-shadow: 0px 0px 100px rgb(0, 0, 0);
-    transform: scale(1.1);
-}
-
-.front_page_img_text {
-    bottom: 20px;
-    right: 20px;
-    color: white;
-    padding-left: 20px;
-    width: fit-content;
-    position: absolute;
-    height: fit-content;
-    padding-right: 20px;
-    background-color: black;
-}
-
