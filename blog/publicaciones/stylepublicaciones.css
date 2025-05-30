@@ -101,6 +101,11 @@ h1{
     font-weight: 350;
     border-radius: 10px;
     background-color: #666666e0;
+    text-align: center;
+}
+
+.blog_entry div p{
+    text-align: left;
 }
 
 footer {
