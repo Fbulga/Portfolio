@@ -21,6 +21,12 @@ body {
 h1, h3 {
     font-family: 'Source Code Pro', monospace;
     text-shadow: 0 0 5px rgba(0, 245, 212, 0.5);
+    transition: all 0.5s ease;
+}
+
+.front h1:hover,h3:hover{
+    color: #F000B8;
+    text-shadow: 0 0 5px rgba(245, 0, 233, 0.5);
 }
 
 h1 {
@@ -100,7 +106,7 @@ ul {
     box-shadow: 4px 4px 0px #F000B8;
 }
 
-.mei_icon {
+.linktree-anchor-icon {
     height: 2rem;
     margin-right: 10px;
     margin-left: 5px;
@@ -111,4 +117,11 @@ ul {
     border-radius: 50%;
     border: #00F5D4 dashed 2px;
     box-shadow: 0 0 50px rgba(0, 245, 212, 0.5);
+    transition: all 0.5s ease;
 }
+
+.ProfilePic:hover{
+    border: #F000B8 dashed 2px;
+    box-shadow: 0 0 50px rgba(245, 0, 225, 0.5);
+}
+

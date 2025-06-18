@@ -70,6 +70,7 @@ h1 {
 .navbar-capsule img {
     height: 35px;
     display: none;
+    padding-right: 1rem;
 }
 
 .main-content-container {
@@ -134,7 +135,7 @@ h1 {
     right: 0;
     padding: 15px;
     color: #F5F5F5;
-    background: linear-gradient(to top, rgba(26, 26, 46, 1), rgba(26, 26, 46, 0));
+    background: linear-gradient(to top, rgba(26, 26, 46, 1), rgba(26, 26, 46, 0.15));
 }
 
 .blog-grid {
@@ -284,9 +285,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1A1A2E;
+    background-color: #0e0e16;
     margin-top: 40px;
     border-top: 1px solid #2A2A3E;
+    box-shadow: #00f5d469 0px -1px 30px 1px;
+    transition: all 0.2s ease;
+}
+
+footer:hover{
+    box-shadow: #f500e969 0px -1px 25px 1px;
 }
 
 .social-button {
