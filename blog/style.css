@@ -372,6 +372,11 @@ footer:hover{
         margin: 10px;
     }
     
+    form {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
     form input[type="text"],
     form input[type="email"] {
         max-width: none;

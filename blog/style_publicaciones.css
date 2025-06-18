@@ -3,6 +3,7 @@
     max-width: 100%;
     border-radius: 12px;
     background-color: #2A2A3E;
+    box-sizing: border-box;
 }
 
 .blog_entry h2 {
