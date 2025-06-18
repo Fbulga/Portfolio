@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bulga Blog</title>
-        <link rel="stylesheet" type="text/css" href="stylepublicaciones.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../style_publicaciones.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     </head>
@@ -13,11 +14,9 @@
 <header class="header">
     <nav class="navbar-capsule">
         <h1>Capsula del tiempo</h1>
-        <img src="/images/github.ico"alt ="">
         <a href="../blog.html">Inicio</a>
         <a href="../publicaciones.html" class="active">Publicaciones</a>
         <a href="../contacto.html">Contacto</a>
-        <a href="/index.html">Linktree</a>
     </nav>
 </header>
 
@@ -26,7 +25,7 @@
     <div class="main-content-container">
         <div class="blog-column-left">
             <section class="blog_entry" style="padding: 25px; ">
-                <p>Fecha de publicacion: 21/5/2025</p>
+                <time datetime="2025-05-21">Fecha de publicación: 21/5/2025</time>
                 <h2>OK Computer</h2>
                 <div>
                     <p> 
@@ -34,26 +33,41 @@
                         el disco con el que Radiohead no solo dio un giro a su carrera, sino que también dejó una marca profunda en la música de los ‘90.
                     </p>
                     <p>
-                        Con temas como <strong>Paranoid Android, Karma Police y No Surprises</strong>, el álbum mezcló guitarras, melancolía y una visión bastante cruda del mundo moderno. 
-                        Fue un disco que supo ponerle <strong>sonido a la ansiedad</strong> de una época que empezaba a digitalizarse y a volverse más impersonal.
+                        Para entender su impacto, hay que situarse en el contexto mundial de finales de siglo. El auge de Internet comenzaba a masificarse, la globalización avanzaba y una sensación de ansiedad y extrañeza ante el nuevo milenio flotaba en el aire. 
+                        <br>La tecnología prometía un futuro brillante, pero también generaba un profundo sentimiento de alienación.
+                    </p>
+                    <p>
+                        Con temas como <strong>"Paranoid Android", "Karma Police" y "No Surprises"</strong>, el álbum capturó esa dualidad a la perfección. 
+                        Fue un disco que supo ponerle <strong>sonido a la ansiedad</strong> de una época que empezaba a digitalizarse y a volverse más impersonal, criticando el consumismo y la deshumanización.
                     </p>
                     <p>
                         A 28 años de su salida,<strong>OK Computer</strong> sigue siendo un disco vigente, de esos que no pasan de moda porque no se parecen a nada. Solo a sí mismo.
                     </p>
-                    <img src="../images/okcomputer.png" style="width: 35%;" alt="">
+                    <img src="../images/okcomputer.png" style="width: 35%;" alt="Portada del album OK Computer">
                 </div>
             </section>
         </div>
 
         <section class="blog_entry contact-column-right" id="contact">
-                <h2>Sobre el blog</h2>
+                <h2 class="blog-tittle">Capsula del Tiempo</h2>
                 <div>
                     <p>
-                        La idea del blog es recopilar algunas de las Efemerides que me hacen reflexionar o me llaman la atencion
+                        Bienvenido a <strong>"La Capsula del Tiempo"</strong> el blog en el que recopilo efemerides de sucesos influyentes en la <strong>cultura pop y nacional</strong>
+                        .</br>Te invito a reflexionar sobre el paso del tiempo
                     </p>
                 </div>
 
-                <h2>Contacto</h2>
+                <h2>Sobre Mi</h2>
+                <div>
+                    <p>
+                        Soy Franco Bulgarella un <strong>Desarrollador de Videojuegos</strong> que esta incursionando en el mundo del desarrollo web! <br>
+                        Este blog tiene el fin de poder mostrarle a los demas distintos <strong>hitos</strong> que ocurrieron a lo largo de la historia.
+                        <br>Espero que al igual que yo lo puedas disfrutar!
+                    </p>
+                    <a href="../index.html" class="btn">Mas sobre mi!</a>
+                </div>
+
+                <h2>Suscribite al blog!</h2>
                 <form action="#" method="post" style="padding-top: 0;">
                     <div>
                         <label for="nombre">Nombre:</label>
@@ -65,14 +79,10 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn">Suscribite</button>
                     </div>
                 </form>
-        </section>
+            </section>
     </div>
 </main>  
     <footer id="contact">

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -6,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Time Capsule</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style_publicaciones.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     </head>
@@ -13,18 +13,15 @@
 
     <header class="header">
         <nav class="navbar-capsule">
-            <h1>Capsula del tiempo</h1>
-            <img src="../images/github.ico" alt="">
-            <a href="#" class="active">Inicio</a>
+            <a href="blog.html" class="active">Inicio</a>
             <a href="publicaciones.html">Publicaciones</a>
             <a href="contacto.html">Contacto</a>
-            <a href="../index.html">Linktree</a>
         </nav>
     </header>
     <main>
         <div class="main-content-container">
 
-            <div class="blog-column-left">
+            <div class="blog-column-left grid-layout">
 
                 <div class="article1 front_page">
                     <a href="publicaciones/publicacion_25_5_25.html">
@@ -32,7 +29,7 @@
                     <div class="front_page_img_text">
                         <time datetime="2025-05-25 20:00"></time>
                         <h3>25 de Mayo</h3>
-                        <h4>Revolucion</h4>
+                        <h4>Revolucion y Locro</h4>
                     </div>
                 </div>
                 <div class="article2 front_page">
@@ -74,14 +71,24 @@
             </div>
             
             <section class="blog_entry contact-column-right" id="contact">
-                <h2>Sobre el blog</h2>
+                <h2 class="blog-tittle">Capsula del Tiempo</h2>
                 <div>
                     <p>
-                        La idea del blog es recopilar algunas de las <strong>efemerides</strong> que me hacen reflexionar o me llaman la atencion
+                        Bienvenido a <strong>"La Capsula del Tiempo"</strong> el blog en el que recopilo efemerides de sucesos influyentes en la <strong>cultura pop y nacional</strong>. </br>Te invito a reflexionar sobre el paso del tiempo
                     </p>
                 </div>
 
-                <h2>Contacto</h2>
+                <h2>Sobre Mi</h2>
+                <div>
+                    <p>
+                        Soy Franco Bulgarella un <strong>Desarrollador de Videojuegos</strong> que esta incursionando en el mundo del desarrollo web! <br>
+                        Este blog tiene el fin de poder mostrarle a los demas distintos <strong>hitos</strong> que ocurrieron a lo largo de la historia.
+                        <br>Espero que al igual que yo lo puedas disfrutar!
+                    </p>
+                    <a href="../index.html" class="btn">Mas sobre mi!</a>
+                </div>
+
+                <h2>Suscribite al blog!</h2>
                 <form action="#" method="post" style="padding-top: 0;">
                     <div>
                         <label for="nombre">Nombre:</label>
@@ -93,11 +100,7 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn">Suscribite</button>
                     </div>
                 </form>
             </section>

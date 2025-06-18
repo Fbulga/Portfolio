@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bulga Blog</title>
-        <link rel="stylesheet" type="text/css" href="stylepublicaciones.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../style_publicaciones.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     </head>
@@ -13,11 +14,9 @@
 <header class="header">
     <nav class="navbar-capsule">
         <h1>Capsula del tiempo</h1>
-        <img src="/images/github.ico"alt ="">
         <a href="../blog.html">Inicio</a>
         <a href="../publicaciones.html" class="active">Publicaciones</a>
         <a href="../contacto.html">Contacto</a>
-        <a href="/index.html">Linktree</a>
     </nav>
 </header>
 
@@ -26,7 +25,7 @@
     <div class="main-content-container">
         <div class="blog-column-left">
             <section class="blog_entry" style="padding: 25px; ">
-                <p>Fecha de publicacion: 25/5/2025</p>
+                <time datetime="2025-05-25">Fecha de publicación: 25/5/2025</time>
                 <h2>Dia de Locro!🥘</h2>
                 <div>
                     <p> Hoy es 25 de mayo y, como manda la tradición, en casa hubo locro. 
@@ -41,23 +40,53 @@
                         El <strong>locro</strong>, en ese sentido, es más que una comida típica. Es una excusa para reunirnos, para hablar, para sentirnos parte de algo más grande. 
                         Y tal vez eso sea lo que más vale de este feriado: recordarnos que seguimos construyendo país, aunque sea de a poco, aunque sea con una cuchara en la mano.
                     </p>
+                    <h4>Receta de Locro Criollo (versión simplificada)</h4>
+                    <p style="text-align: left;">
+                        <strong>Ingredientes:</strong><br>
+                        - 250g de maíz blanco pisado<br>
+                        - 150g de porotos pallares<br>
+                        - 2 chorizos colorados<br>
+                        - 200g de panceta ahumada<br>
+                        - 300g de falda o roast beef<br>
+                        - 1/2 calabaza en cubos<br>
+                        - 2 cebollas, 1 pimiento rojo, 2 cebollas de verdeo<br>
+                        - Pimentón dulce, ají molido y comino al gusto<br>
+                        <br>
+                        <strong>Pasos:</strong><br>
+                        1. Dejar en remojo el maíz y los porotos desde la noche anterior.<br>
+                        2. En una olla grande, hervir el maíz y los porotos hasta que estén tiernos.<br>
+                        3. En una sartén, dorar la panceta, los chorizos en rodajas y la carne. Retirar y reservar.<br>
+                        4. En la misma sartén, sofreír la cebolla y el pimiento. Condimentar.<br>
+                        5. Agregar el sofrito, las carnes y la calabaza a la olla con el maíz. Cocinar a fuego bajo, revolviendo, hasta que la calabaza se deshaga y el guiso espese.<br>
+                        6. Para la salsa, picar la cebolla de verdeo y saltearla en aceite con pimentón y ají molido. Servir sobre el locro.
+                    </p>
                     <p>
                         🇦🇷¡Feliz 25 de Mayo!🇦🇷
                     </p>
-                    <img src="../images/locro-tradicional-receta.webp" style="width: 50%;" alt="">
+                    <img src="../images/locro-tradicional-receta.webp" style="width: 50%;" alt="Plato de locro tradicional">
                 </div>
             </section>
         </div>
 
         <section class="blog_entry contact-column-right" id="contact">
-                <h2>Sobre el blog</h2>
+                <h2 class="blog-tittle">Capsula del Tiempo</h2>
                 <div>
                     <p>
-                        La idea del blog es recopilar algunas de las Efemerides que me hacen reflexionar o me llaman la atencion
+                        Bienvenido a <strong>"La Capsula del Tiempo"</strong> el blog en el que recopilo efemerides de sucesos influyentes en la <strong>cultura pop y nacional</strong>. </br>Te invito a reflexionar sobre el paso del tiempo
                     </p>
                 </div>
 
-                <h2>Contacto</h2>
+                <h2>Sobre Mi</h2>
+                <div>
+                    <p>
+                        Soy Franco Bulgarella un <strong>Desarrollador de Videojuegos</strong> que esta incursionando en el mundo del desarrollo web! <br>
+                        Este blog tiene el fin de poder mostrarle a los demas distintos <strong>hitos</strong> que ocurrieron a lo largo de la historia.
+                        <br>Espero que al igual que yo lo puedas disfrutar!
+                    </p>
+                    <a href="../index.html" class="btn">Mas sobre mi!</a>
+                </div>
+
+                <h2>Suscribite al blog!</h2>
                 <form action="#" method="post" style="padding-top: 0;">
                     <div>
                         <label for="nombre">Nombre:</label>
@@ -69,14 +98,10 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn">Suscribite</button>
                     </div>
                 </form>
-        </section>
+            </section>
     </div>
 </main>  
     <footer id="contact">

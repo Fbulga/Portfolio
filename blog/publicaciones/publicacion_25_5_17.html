@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bulga Blog</title>
-        <link rel="stylesheet" type="text/css" href="stylepublicaciones.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../style_publicaciones.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     </head>
@@ -12,12 +13,9 @@
     <body>
         <header class="header">
             <nav class="navbar-capsule">
-                <h1>Capsula del tiempo</h1>
-                <img src="/images/github.ico"alt ="">
                 <a href="../blog.html">Inicio</a>
                 <a href="../publicaciones.html" class="active">Publicaciones</a>
                 <a href="../contacto.html">Contacto</a>
-                <a href="/index.html">Linktree</a>
             </nav>
         </header>
 
@@ -33,48 +31,56 @@
                                 Nacido en Roma en 1957, Luca llegó a Argentina en los 80 y fundó <strong>Sumo</strong>, una de las bandas más influyentes del rock nacional.
                             </p>
                             <p>
-                                Con su carisma y voz inconfundible, Luca lideró a Sumo a la cima, dejando clásicos como <strong>"Divididos por la Felicidad" y "After Chabón"</strong>. <br>
-                                Sus letras, crudas y poéticas, abordaron la alienación y la crítica social.
+                                Con su carisma y voz inconfundible, Luca lideró a Sumo a la cima, dejando clásicos como <strong>"Divididos por la Felicidad" y "After Chabón"</strong>. <br> 
+                                Sus letras, crudas y poéticas, abordaron la alienación y la crítica social con una honestidad brutal.
+                            </p>
+                            <p>
+                                El efecto de Sumo en el rock nacional fue sísmico. En una escena dominada por el rock sinfónico y la canción protesta, Luca introdujo la urgencia del punk, la cadencia del reggae y la oscuridad del post-punk. 
+                                <br>La banda sonaba a algo completamente nuevo y extranjero, pero con letras que conectaban con la juventud argentina de la post-dictadura. Abrieron la puerta a una nueva generación de bandas que se animaron a experimentar y a romper con las fórmulas establecidas.
                             </p>
                             <p>
                                 Más allá de la música, Prodan fue un personaje <strong>transgresor y enigmático, símbolo de la contracultura.</strong> 
                                 Aunque falleció joven en 1987, su legado perdura, influenciando a incontables artistas.
                             </p>
-                            <p>
-                                En este aniversario, recordamos a Luca Prodan: un artista fundamental que, con su talento y espíritu indomable, dejó una <strong>huella imborrable</strong> en la música argentina.
-                            </p>
-                            <img src="../images/luca.jpg" style="width: 50%;" alt="">
+                            <img src="../images/luca.jpg" style="width: 50%;" alt="Retrato de Luca Prodan">
                         </div>
                     </section>
                 </div>
 
                 <section class="blog_entry contact-column-right" id="contact">
-                        <h2>Sobre el blog</h2>
-                        <div>
-                            <p>
-                                La idea del blog es recopilar algunas de las Efemerides que me hacen reflexionar o me llaman la atencion
-                            </p>
-                        </div>
+                    <h2 class="blog-tittle">Capsula del Tiempo</h2>
+                    <div>
+                        <p>
+                            Bienvenido a <strong>"La Capsula del Tiempo"</strong> el blog en el que recopilo efemerides de sucesos influyentes en la <strong>cultura pop y nacional</strong>
+                            .</br>Te invito a reflexionar sobre el paso del tiempo
+                        </p>
+                    </div>
 
-                        <h2>Contacto</h2>
-                        <form action="#" method="post" style="padding-top: 0;">
-                            <div>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre" required>
-                            </div>
-                            
-                            <div>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div>
-                                <label for="mensaje">Mensaje:</label>
-                                <textarea id="mensaje" name="mensaje" required></textarea>
-                            </div>
-                            <div>
-                                <button type="submit">Enviar</button>
-                            </div>
-                        </form>
+                    <h2>Sobre Mi</h2>
+                    <div>
+                        <p>
+                            Soy Franco Bulgarella un <strong>Desarrollador de Videojuegos</strong> que esta incursionando en el mundo del desarrollo web! <br>
+                            Este blog tiene el fin de poder mostrarle a los demas distintos <strong>hitos</strong> que ocurrieron a lo largo de la historia.
+                            <br>Espero que al igual que yo lo puedas disfrutar!
+                        </p>
+                        <a href="../index.html" class="btn">Mas sobre mi!</a>
+                    </div>
+
+                    <h2>Suscribite al blog!</h2>
+                    <form action="#" method="post" style="padding-top: 0;">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn">Suscribite</button>
+                        </div>
+                    </form>
                 </section>
             </div>
         </main>  
