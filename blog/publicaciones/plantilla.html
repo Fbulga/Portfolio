@@ -6,6 +6,7 @@
         <title>Bulga Blog</title>
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="stylesheet" type="text/css" href="../style_publicaciones.css">
+        <link rel="icon" href="/images/time-capsule_color.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     </head>
@@ -13,7 +14,7 @@
 
 <header class="header">
     <nav class="navbar-capsule">
-        <img src="/images/github.ico"alt ="">
+        <img src="../../images/time-capsule_cyan.png"alt ="time-capsule-logo">
         <a href="../blog.html">Inicio</a>
         <a href="../publicaciones.html" class="active">Publicaciones</a>
         <a href="../contacto.html">Contacto</a>
@@ -25,7 +26,7 @@
     <div class="main-content-container">
         <div class="blog-column-left">
             <section class="blog_entry" style="padding: 25px; ">
-                <p>Fecha de publicacion: DIA/MES/AÑO</p>
+                <time datetime="AÑO-MES-DIA">Fecha de publicacion: DIA/MES/AÑO</time>
                 <h2>TITULO</h2>
                 <div>
                     <p>
@@ -46,15 +47,26 @@
         </div>
 
         <section class="blog_entry contact-column-right" id="contact">
-                <h2>Sobre el blog</h2>
+                <h2 class="blog-tittle">Capsula del Tiempo</h2>
                 <div>
                     <p>
-                        La idea del blog es recopilar algunas de las Efemerides que me hacen reflexionar o me llaman la atencion
+                        Bienvenido a <strong>"La Capsula del Tiempo"</strong> el blog en el que recopilo efemerides de sucesos influyentes en la <strong>cultura pop y nacional</strong>. 
+                    </br>Te invito a reflexionar sobre el paso del tiempo
                     </p>
                 </div>
 
-                <h2>Contacto</h2>
-                <form action="#" method="post" style="padding-top: 0;">
+                <h2>Sobre Mi</h2>
+                <div>
+                    <p>
+                        Soy Franco Bulgarella un <strong>Desarrollador de Videojuegos</strong> que esta incursionando en el mundo del desarrollo web! <br>
+                        Este blog tiene el fin de poder mostrarle a los demas distintos <strong>hitos</strong> que ocurrieron a lo largo de la historia.
+                        <br>Espero que al igual que yo lo puedas disfrutar!
+                    </p>
+                    <a href="../../index.html" class="btn">Mas sobre mi!</a>
+                </div>
+
+                <h2>Suscribite al blog!</h2>
+                <form id="subscribe-form" action="#" method="post" style="padding-top: 0;">
                     <div>
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
@@ -65,16 +77,19 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn">Suscribite</button>
                     </div>
                 </form>
-        </section>
+            </section>
     </div>
 </main>  
+    <div id="subscription-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Gracias por suscribirte</h2>
+            <p>Recibiras correos con las actualizaciones del blog!</p>
+        </div>
+    </div>
     <footer id="contact">
         <p>Autor: Franco Bulgarella</p>
         <div>
@@ -82,9 +97,10 @@
                 <img src="../../images/linkedinLogo.webp" alt="LinkedIn">
             </a>
             <a href="https://github.com/Fbulga?tab=repositories" target="_blank" class="social-button">
-                <img src="../../images/github.ico"alt="GitHub">
+                <img src="../../images/github.ico" alt="GitHub">
             </a>
-        </div>   
+        </div>
     </footer>
+    <script src="../scripts.js"></script>
     </body>
 </html>

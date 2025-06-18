@@ -68,7 +68,7 @@
             </div>
 
             <h2>Suscribite al blog!</h2>
-            <form action="#" method="post" style="padding-top: 0;">
+            <form id="subscribe-form" action="#" method="post" style="padding-top: 0;">
                 <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -85,6 +85,15 @@
         </section>
     </div>
 </main>  
+
+    <div id="subscription-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Gracias por suscribirte</h2>
+            <p>Recibiras correos con las actualizaciones del blog!</p>
+        </div>
+    </div>
+
     <footer id="contact">
         <p>Autor: Franco Bulgarella</p>
         <div>
@@ -96,5 +105,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="../scripts.js"></script>
+
     </body>
 </html>
