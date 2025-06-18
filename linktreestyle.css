@@ -1,18 +1,43 @@
-html{
+html {
     height: 100%;
-} 
+}
 
 body {
     margin: 0;
     height: auto;
     text-align: center;
-    color: rgb(243, 243, 243);
-    font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom right, #357296, #0d1b24);
+    color: #F5F5F5;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #1A1A2E;
+    background-image: linear-gradient(to bottom right, #1A1A2E, #2A2A3E);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    font-family: 'Source Code Pro', monospace;
+    text-shadow: 0 0 5px rgba(0, 245, 212, 0.5);
+}
+
+h1 {
+    color: #00F5D4;
+}
+
+h3 {
+    color: #F5F5F5;
+    font-weight: 400;
 }
 
 .button-container {
     padding-bottom: 1%;
+}
+
+.button-container p{
+    margin-top: 0px;
 }
 
 .social-button {
@@ -23,13 +48,14 @@ body {
     align-items: center;  
     display: inline-flex;  
     justify-content: center; 
-    background-color: #ffffff;
+    background-color: #00F5D4;
     transition: transform 0.2s ease-in-out;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .social-button:hover {
     transform: scale(1.1);
+    background-color: #F000B8;
 }
 
 .social-button img {
@@ -38,40 +64,51 @@ body {
     object-fit: contain;
 }
 
-ul{
+ul {
     padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-  flex-direction: column;
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
 }
 
 .linktree-anchor {
     height: 3rem;
-    width: 25%;
-    margin: 1rem;
-    display: flex;  
-    color: #3c73ae;
+    width: 90%;
+    margin: 1rem 0;
+    display: flex;
+    color: #F5F5F5;
+    font-weight: bold;
+    border: 2px solid #00F5D4;
     overflow: hidden;
     padding: 8px 12px;
     border-radius: 10px;
-    align-items: center;  
+    align-items: center;
     text-decoration: none;
-    justify-content: center; 
-    background-color: #ffffff;
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 10px 10px 0px #428eb9;
+    justify-content: center;
+    background-color: #2A2A3E;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 8px 8px 0px #00F5D4;
 }
 
-
-.linktree-anchor:hover{
-    color: white;
-    transform: scale(1.2);
-    background-color: #5ac2ff;
+.linktree-anchor:hover {
+    color: #1A1A2E;
+    background-color: #00F5D4;
+    transform: translate(4px, 4px);
+    box-shadow: 4px 4px 0px #F000B8;
 }
 
-
-.mei_icon{
+.mei_icon {
     height: 2rem;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.ProfilePic{
+    max-width: 250px;
+    border-radius: 50%;
+    border: #00F5D4 dashed 2px;
+    box-shadow: 0 0 50px rgba(0, 245, 212, 0.5);
 }

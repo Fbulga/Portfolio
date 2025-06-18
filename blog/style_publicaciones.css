@@ -1,40 +1,41 @@
 .blog_entry {
-    padding: 20px;
+    padding: 25px;
     max-width: 100%;
-    border-radius: 15px;
-    background-color: #555;
+    border-radius: 12px;
+    background-color: #2A2A3E;
 }
 
 .blog_entry h2 {
-    padding: 0.5%;
-    padding-left: 5%;
-    border-radius: 10px;
-    background-color: #838383;
+    background-color: transparent;
+    border-bottom: 2px solid #00F5D4;
+    padding: 0 0 10px 0;
+    border-radius: 0;
+    text-align: left;
 }
 
 .blog_entry div {
-    padding: 15px;
     margin-top: 10px;
     font-weight: 350;
     border-radius: 10px;
-    background-color: #666666e0;
+    background-color: transparent;
     text-align: center;
 }
 
 .blog_entry div p {
     text-align: left;
+    line-height: 1.6;
 }
 
 .blog_entry time {
     display: block;
     text-align: left;
     margin-bottom: 15px;
-    color: #ccc;
+    color: #F000B8;
+    font-weight: 500;
 }
 
 @media (max-width: 767px) {
     .blog_entry {
-    padding-left: 0px;
-    padding-right: 0px;
+        padding: 15px;
     }
 }
