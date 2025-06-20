@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franco Bulgarella Portfolio</title>
+    <link rel="icon" href="images/briefcase_icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar-capsule">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#about">About Me</a>
+            <a href="#works">Works</a>
+            <a href="#contact">Contact</a>
+            <a href="../index.html">Linktree</a>
+        </nav>
+    </header>
+
+    <div id="inicio" class="front_container">
+        <h1 class="front_title">FRANCO BULGARELLA</h1>
+        <a href="#about" class="front_button">Learn More</a>
+        <img src="images/images.webp" class="front_image">
+    </div>
+
+    <div id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="columns-container">
+            <div class="column">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Game Dev. Bachelor Degree</strong> - UADE (2020-2025)</li>
+                    <li><strong>Renewable Energy Technician</strong> - IILAH (2016-2020)</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Experience</h3>
+                <ul>
+                    <li><strong>IT Support / Maintenance</strong> - IILAH (2024-Present)</li>
+                    <li><strong>Help Desk Level 3 Technician</strong> - TNG Vial (2022-2024)</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Aptitudes</h3>
+                <ul>
+                    <li><strong>Game Dev.:</strong> Unity, Unreal</li>
+                    <li><strong>Programming Languages:</strong> C#, C++, SQL, Python</li>
+                    <li><strong>Front-End:</strong> HTML, CSS, JavaScript</li>
+                    <li><strong>Design:</strong> Blender, Substance Designer, Photoshop</li>
+                    <li>Team Work</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="works" class="section works">
+        <h2>Works</h2>
+        <div class="highlights-container">
+            <h3>Highlights:</h3>
+            <ul class="highlights-list">
+                <li><a href="https://dfmr96.itch.io/unreal-manor" target="_blank" rel="noopener noreferrer">Unreal Manor</a></li>
+                <li><a href="https://facu-sh.itch.io/goose-game" target="_blank" rel="noopener noreferrer">Goose Game</a></li>
+                <li><a>Proyect Latam (In Progress)</a></li>
+            </ul>
+        </div>
+        <div class="works-grid">
+            <div class="work-item">
+                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Proyecto de Desarrollo de Videojuegos">
+                <h3>Game Dev.</h3>
+            </div>
+            <div class="work-item">
+                <img src="https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Proyecto de Arte Digital">
+                <h3>Art</h3>
+            </div>
+            <div class="work-item">
+                <img src="https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Proyecto de Arte Digital">
+                <h3>Development</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p class="section-subtitle">Wanna Collab? Contact Me!</p>
+        <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Message:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
