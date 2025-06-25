@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - Franco Bulgarella</title>
+    <link rel="icon" href="images/briefcase_icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../style-additions.css">
+    <link rel="stylesheet" type="text/css" href="../style-apps.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar-capsule">
+            <a href="../portfolio.html#home">Home</a>
+            <a href="../portfolio.html#projects" class="active">Projects</a>
+            <a href="../portfolio.html#about">About Me</a>
+            <a href="../portfolio.html#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div id="todo-app" class="section main-section">
+            <div class="app-header">
+                <a href="../development.html" class="back-to-dev-btn" title="Back to Development Projects">Back</a>
+                <h2>To-Do List</h2>
+            </div>
+            <p class="app-description">A simple To-Do List in the browser</p>
+            
+            <div class="todo-container">
+                <form id="todo-form">
+                    <input type="text" id="todo-input" placeholder="Add a new task..." required>
+                    <button type="submit">Add</button>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Franco Bulgarella. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/franco-bulgarella/" target="_blank" class="social-button"><img src="../../images/linkedinLogo.webp" alt="LinkedIn"></a>
+            <a href="https://github.com/Fbulga?tab=repositories" target="_blank" class="social-button"><img src="../../images/github.ico" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script src="../scripts/todolist.js"></script>
+</body>
+</html>

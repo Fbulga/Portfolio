@@ -12,6 +12,7 @@
 }
 
 html {
+    height: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
 }
@@ -21,6 +22,13 @@ body {
     margin: 0;
     background-color: var(--background);
     color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 
@@ -83,14 +91,31 @@ body {
     padding: 10px;
     font-size: 6vw;
     text-align: center;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
     width: 90%;
     z-index: 2;
 }
 
+.front_subtitle {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text);
+    margin: 0;
+    padding: 10px;
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+    width: 90%;
+    z-index: 2;
+    display: block;
+}
+
+
 .front_button {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
@@ -141,6 +166,20 @@ body {
     border-bottom: 2px solid var(--highlight);
     margin-bottom: 20px;
 }
+.about-section h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.about-section h5 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 
 .about-section ul {
     list-style-type: none;
@@ -152,13 +191,21 @@ body {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+.about-section p{
+    line-height: 2rem;
+}
 
+.soft-skills ul {
+    list-style-type:disc;
+    padding-left: 1rem;
+    margin: 0;
+}
 
 .highlights-container {
     max-width: 1200px;
     margin: 0 auto 50px;
     padding: 0 20px;
-    text-align: center; /* Centra el título h3 */
+    text-align: center;
 }
 
 .highlights-container h3 {
@@ -166,7 +213,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* --- ESTILOS NUEVOS PARA TARJETAS DE HIGHLIGHTS --- */
 .highlights-grid {
     display: flex;
     justify-content: center;
@@ -178,7 +224,7 @@ body {
     background-color: #2a2a2a;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 20px var(--highlight);
+    box-shadow: 0 0px 20px var(--highlight);
     text-decoration: none;
     color: var(--text);
     display: block;
@@ -197,7 +243,8 @@ body {
     height: 200px;
     object-fit: cover;
     display: block;
-    border-bottom: 3px solid var(--highlight);
+    border-bottom: 2px solid var(--highlight);
+    border-radius: 5px;
 }
 
 .card-content {
@@ -222,8 +269,6 @@ body {
     line-height: 1.5;
     opacity: 0.8;
 }
-/* --- FIN DE ESTILOS NUEVOS --- */
-
 
 .proyects-grid {
     display: flex;
@@ -335,12 +380,49 @@ body {
     box-shadow: 0 0 20px var(--text);
 }
 
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    flex-shrink: 0;
+    background-color: #2a2a2a;
+    border-top: 3px solid var(--highlight);
+}
+
+footer p {
+    margin: 0 0 15px 0;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-button img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-button:hover img {
+    transform: scale(1.2);
+}
+
 
 @media (max-width: 992px) {
     .proyects-grid {
         flex-direction: column;
         align-items: center;
     }
+
+    .front_button {
+        top: 75%;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -353,11 +435,16 @@ body {
     }
 
     .front_title {
+        padding-top: 2rem;
         font-size: 10vw;
     }
 
+    .front_subtitle {
+        display: none;
+    }
+
     .front_button {
-        top: 85%;
+        top: 90%;
         padding: 8px 16px;
         font-size: 14px;
     }

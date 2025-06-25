@@ -1,0 +1,348 @@
+:root {
+    --appBackground: #2a2a2a;
+    --appDisplay: #181818;
+    --calculatorButtonNumber: #3f3f3f;
+    --calculatorButtonNumberHover: #555555;
+    --highlightHover: #2c4475;
+    --calculatorButtonClear: #c1121f;
+    --calculatorButtonClearHover: #c4434b;
+    --calculatorButtonEqual: #d4a373;
+    --calculatorButtonEqualHover: #e6b88a;
+    --text: #dddddd;
+    --textInverse: #000000;
+}
+
+
+.app-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app-description {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.app-header h2 {
+    margin: 0;
+}
+
+.back-to-dev-btn {
+    position: absolute;
+    left: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background-color: var(--calculatorButtonClear);
+    color: var(--text);
+    border: 2px solid var(--highlight);
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-to-dev-btn:hover {
+    background-color: var(--highlight);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 0 15px var(--highlight);
+}
+
+@media (max-width: 768px) {
+    .app-header h2 {       
+       font-size: 2rem;
+    }
+
+    .back-to-dev-btn {
+        left:0;
+        top:5%;
+        width: 55px;
+        height: 55px;
+        font-size: 1rem;
+    }
+}
+
+
+
+.calculator {
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: var(--appBackground);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 35px var(--highlight);
+}
+
+.calculator-display {
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5rem;
+    text-align: right;
+    border: 2px solid var(--highlight);
+    background-color: var(--appDisplay);
+    color: var(--text);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-keys button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--calculatorButtonNumber);
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.calculator-keys button:hover {
+    background-color: var(--calculatorButtonNumberHover);
+}
+
+.calculator-keys button.operator {
+    background-color: var(--highlight);
+}
+.calculator-keys button.operator:hover {
+    background-color: var(--highlightHover);
+}
+
+.calculator-keys button.clear {
+    background-color: var(--calculatorButtonClear);
+}
+.calculator-keys button.clear:hover {
+    background-color: var(--calculatorButtonClearHover);
+}
+
+.calculator-keys button.equals {
+    background-color: var(--calculatorButtonEqual);
+}
+
+.calculator-keys button.equals:hover {
+    background-color: var(--calculatorButtonEqualHover);
+}
+
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--highlight);
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--highlight);
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px var(--highlight);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--text);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.nav-btn {
+    background: rgba(42, 42, 42, 0.5);
+    color: var(--text);
+    border: 2px solid var(--text);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px; 
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.nav-btn:hover {
+    background: rgba(221, 221, 221, 0.3);
+    border-color: var(--highlight);
+}
+
+
+@media (max-width: 768px) {
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        margin: 0 5px;
+    }
+
+    #lightbox img {
+        max-width: 75%;
+    }
+}
+
+
+.todo-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--appBackground);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 35px var(--highlight);
+}
+
+#todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid var(--highlight);
+    background-color: var(--appDisplay);
+    color: var(--text);
+    font-size: 1rem;
+    outline: none;
+}
+
+#todo-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--highlight);
+    color: var(--text);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+#todo-form button:hover{
+    background-color: var(--highlightHover);
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    background-color: var(--appDisplay);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#todo-list li.completed {
+    opacity: 0.5;
+}
+
+#todo-list li.completed .task-text {
+    text-decoration: line-through;
+}
+
+
+.task-text {
+    cursor: pointer;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
+}
+
+.delete-btn {
+    background: #c1121f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+
+.minigame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.minigame-container iframe {
+    width: 325px; 
+    height: 569px;
+    max-width: 1280px;
+    aspect-ratio: 16 / 9;
+    border: 2px solid var(--highlight);
+    border-radius: 15px;
+    box-shadow: 0 8px 35px var(--highlight);
+}
