@@ -189,7 +189,7 @@
         <div id="contact" class="section contact">
             <h2>Contact</h2>
             <p class="section-subtitle">Wanna Collab? Contact Me!</p>
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="#" method="post" id="subscribe-form">
                 <div class="form-group">
                     <label for="nombre">Name:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -209,6 +209,14 @@
         </div>
     </main>
 
+    <div id="subscription-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Thanks for contacting!</h2>
+            <p>I'll be in touch as soon as possible!</p>
+        </div>
+    </div>
+
     <footer>
         <p>© 2025 Franco Bulgarella. All Rights Reserved.</p>
         <div class="social-links">
@@ -220,6 +228,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="../blog/scripts.js"></script>
 </body>
 
 </html>
