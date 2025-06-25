@@ -346,3 +346,47 @@
     border-radius: 15px;
     box-shadow: 0 8px 35px var(--highlight);
 }
+
+/* --- ESTILOS AÑADIDOS PARA LA PÁGINA DEL MINIJUEGO --- */
+
+body.minigame-page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body.minigame-page main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+body.minigame-page #minigame-app.section.main-section {
+    padding: 0 !important;
+}
+
+body.minigame-page .app-header {
+    padding-left: 85px;
+    padding-right: 85px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body.minigame-page footer {
+    padding: 10px 20px;
+    border-top-width: 2px;
+}
+body.minigame-page footer p {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+}
+body.minigame-page footer .social-links {
+    gap: 15px;
+}
+body.minigame-page footer .social-button img {
+    width: 26px;
+    height: 26px;
+}
