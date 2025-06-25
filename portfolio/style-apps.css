@@ -35,7 +35,7 @@
 
 .back-to-dev-btn {
     position: absolute;
-    left: 10rem;
+    left: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
