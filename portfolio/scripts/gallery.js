@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "../images/UnrealManor2.jpg",
         "../images/GooseGame.png",
         "../images/extrañakawaii.png",
-        "../images/extrañakawaii2.png"
+        "../images/extrañakawaii2.png",
     ];
 
     
