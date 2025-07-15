@@ -60,6 +60,15 @@
     box-shadow: 0 0 15px var(--highlight);
 }
 
+
+@media (max-width: 768px) {
+    .back-to-dev-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.75rem;
+    }
+}
+
 .calculator {
     max-width: 350px;
     margin: 0 auto;
@@ -106,6 +115,7 @@
 .calculator-keys button.operator {
     background-color: var(--highlight);
 }
+
 .calculator-keys button.operator:hover {
     background-color: var(--highlightHover);
 }
@@ -113,6 +123,7 @@
 .calculator-keys button.clear {
     background-color: var(--calculatorButtonClear);
 }
+
 .calculator-keys button.clear:hover {
     background-color: var(--calculatorButtonClearHover);
 }
@@ -137,8 +148,8 @@
 
 .gallery-image {
     width: 100%;
-    aspect-ratio: 16 / 9; 
-    object-fit: cover; 
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -177,26 +188,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
 #lightbox img {
-    flex-shrink: 1; 
+    flex-shrink: 1;
     flex-grow: 0;
-    max-width: 90%; 
+    max-width: 90%;
     max-height: 75%;
-    width: auto; 
-    height: auto; 
-    object-fit: contain; 
+    width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 0 40px var(--highlight);
 }
 
 #lightbox-caption {
-    flex-shrink: 0; 
+    flex-shrink: 0;
     color: var(--text);
     text-align: center;
     margin-top: 15px;
@@ -241,7 +252,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 15px; 
+    margin: 0 15px;
     transition: all 0.3s ease;
     user-select: none;
     flex-shrink: 0;
@@ -255,7 +266,7 @@
 
 @media (max-width: 768px) {
     #lightbox {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .nav-btn {
@@ -266,7 +277,7 @@
     }
 
     #lightbox img {
-        max-width: 100%; 
+        max-width: 100%;
         max-height: 65vh;
     }
 
@@ -320,7 +331,8 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-#todo-form button:hover{
+
+#todo-form button:hover {
     background-color: var(--highlightHover);
 }
 
@@ -377,7 +389,7 @@
 }
 
 .minigame-container iframe {
-    width: 325px; 
+    width: 325px;
     height: 569px;
     max-width: 1280px;
     aspect-ratio: 16 / 9;
@@ -416,13 +428,16 @@ body.minigame-page footer {
     padding: 10px 20px;
     border-top-width: 2px;
 }
+
 body.minigame-page footer p {
     margin-bottom: 8px;
     font-size: 0.8rem;
 }
+
 body.minigame-page footer .social-links {
     gap: 15px;
 }
+
 body.minigame-page footer .social-button img {
     width: 26px;
     height: 26px;

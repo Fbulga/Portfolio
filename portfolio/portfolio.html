@@ -9,9 +9,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+
+
     <header class="header">
         <nav class="navbar-capsule">
             <a href="#home" class="active">Home</a>
@@ -20,7 +23,6 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
 
     <main>
         <div id="home" class="front_container">
@@ -104,83 +106,124 @@
                 <h3>Education</h3>
                 <ul>
                     <li>
-                        <h4><strong>Game Dev. Bachelor Degree</strong> - UADE (2020-2026) </h4>
-                        <h5>Technical Skills</h5>
-                        <p><strong>Game Programming</strong></p>
-                        <p>
-                            Languages: C++, C#,Familiar with Python<br>
-                            Engines: Unity, Basic Unreal Engine</p>
-
-                        <p><strong>Gameplay & Systems</strong></p>
-                        <p>
-                            Strong understanding of object-oriented programming (OOP) and software architecture for games<br>
-                            Implementation of data structures and algorithms for game logic
-                        </p>
-                        
-                        <p><strong>Artificial Intelligence</strong></p>
-                        <p>
-                            Development of AI for NPCs, including pathfinding (A*), state machines, and behavior trees<br>
-                        </p>
-
-                        <p><strong>Optimization</strong></p>
-                        <p>
-                            CPU and GPU performance profiling and debugging<br>
-                            Experience with memory management and code optimization techniques
-                        </p>
-
-                        <p><strong>Tools & Version Control</strong></p>
-                        <p>
-                            IDE: Visual Studio, VS Code, Rider<br>
-                            Version Control: Git
-                        </p>
-
-                        <p><strong>Game Design</strong></p>
-                        <p>
-                            System Design: Designing, prototyping, balancing game systems, mechanics, and gameplay loops<br>
-                            UX/UI: Designing intuitive user interfaces and ensuring a positive user experience, from wireframing to in-game implementation
-                        </p>
+                        <h4><strong>Game Dev. Bachelor Degree</strong> - UADE (2020-2026)</h4>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h5><i class="fas fa-code"></i> Programming & Engines</h5>
+                                <div class="skill-tags">
+                                    <span>C++</span>
+                                    <span>C#</span>
+                                    <span>Python</span>
+                                    <span>Unity</span>
+                                    <span>Unreal Engine</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h5><i class="fas fa-brain"></i> Core Concepts</h5>
+                                <div class="skill-tags">
+                                    <span>OOP</span>
+                                    <span>Software Architecture</span>
+                                    <span>Data Structures</span>
+                                    <span>Algorithms</span>
+                                    <span>AI (A*, FSM, Behavior Trees)</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h5><i class="fas fa-tools"></i> Tools & Development</h5>
+                                <div class="skill-tags">
+                                    <span>Git</span>
+                                    <span>Visual Studio</span>
+                                    <span>VS Code</span>
+                                    <span>Rider</span>
+                                    <span>CPU/GPU Optimization</span>
+                                    <span>Memory Management</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h5><i class="fas fa-gamepad"></i> Game Design</h5>
+                                <div class="skill-tags">
+                                    <span>System Design</span>
+                                    <span>Gameplay Loops</span>
+                                    <span>UX / UI</span>
+                                    <span>Prototyping</span>
+                                    <span>Balancing</span>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <h4><strong>Renewable Energy Technician</strong> - IILAH (2016-2020)</h4>
                     </li>
                 </ul>
+                </ul>
             </div>
             <div class="about-section">
                 <h3>Experience</h3>
-                <ul>
-                    <li>
-                        <h4><strong>IT Support / Maintenance</strong> - IILAH (2024-Present)</h4>
-                        <p>
-                            Installed and configured printers and computers <br>
-                            Configured Raspberry Pi devices for classroom use <br>
-                            Contributed to the cross-platform development of an in-house system for data management and statistics
-                        </p>
-                    </li>
-                    <li>
-                        <h4><strong>Help Desk Level 3 Technician</strong> - TNG Vial (2022-2024)</h4>
-                        <p>
-                            <strong>Coordinated daily tasks</strong> for the technical team, providing technical support across 8 different municipalities<br>
-                            <strong>Generated daily performance reports</strong> for over 120 devices installed in high-traffic areas to maintain an accurate operational history<br>
-                            Provided <strong>remote assistance</strong> via phone and remote access to resolve technical issues and offer user support for Windows and Linux environments <br>
-                            Conducted in-depth analysis of equipment failures using various techniques to identify the root cause and implement <strong>effective solutions</strong> <br>
-                            Managed inventory control to ensure stock availability and process purchase orders as required <br>
-                        </p>
-                    </li>
-                </ul>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4><strong>IT Support / Maintenance</strong> - IILAH</h4>
+                            <span class="timeline-date">2024 - Present</span>
+                            <ul class="job-responsibilities">
+                                <li>Installed and configured printers and computers.</li>
+                                <li>Configured Raspberry Pi devices for classroom use.</li>
+                                <li>Contributed to the cross-platform development of an in-house system for data
+                                    management.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4><strong>Help Desk Level 3 Technician</strong> - TNG Vial</h4>
+                            <span class="timeline-date">2022 - 2024</span>
+                            <ul class="job-responsibilities">
+                                <li><strong>Coordinated daily tasks</strong> for the technical team across 8
+                                    municipalities.</li>
+                                <li><strong>Generated daily performance reports</strong> for over 120 devices in
+                                    high-traffic areas.</li>
+                                <li>Provided <strong>remote assistance</strong> for Windows and Linux environments.</li>
+                                <li>Conducted in-depth analysis of equipment failures to implement <strong>effective
+                                        solutions</strong>.</li>
+                                <li>Managed inventory control and processed purchase orders.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="about-section soft-skills">
                 <h3>Soft Skills</h3>
-                <ul>
-                    <li>Leadership & Coordination</li>
-                    <li>Problem-Solving</li>
-                    <li>Effective Communication</li>
-                    <li>Teamwork & Collaboration</li>
-                    <li>Organization & Planning</li>
-                    <li>Analytical & Critical Thinking</li>
-                    <li>Attention to Detail</li>
-                    <li>Adaptability</li>
-                    <li>Customer/User Focus</li>
-                </ul>
+                <div class="skills-grid">
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-users"></i> Leadership & Coordination</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-lightbulb"></i> Problem-Solving</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-comments"></i> Effective Communication</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-handshake"></i> Teamwork & Collaboration</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-tasks"></i> Organization & Planning</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-search"></i> Analytical & Critical Thinking</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-eye"></i> Attention to Detail</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-sync-alt"></i> Adaptability</h5>
+                    </div>
+                    <div class="skill-category soft">
+                        <h5><i class="fas fa-heart"></i> Customer/User Focus</h5>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -227,10 +270,9 @@
         </div>
     </footer>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="scripts/portfolio.js"></script>
+    <script src="scripts/animated-background.js"></script>
 
 </body>
 
