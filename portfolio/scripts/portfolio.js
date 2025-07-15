@@ -167,7 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
             currentY += dy * easing;
 
             const angle = Math.atan2(dy, dx) * (180 / Math.PI);
-            mouseFollower.style.transform = `translate3d(${currentX-12.5}px, ${currentY}px, 0) rotate(${angle + 90}deg)`;
+            
+            mouseFollower.style.transform = `translate3d(${currentX - 12.5}px, ${currentY}px, 0) rotate(${angle + 90}deg)`;
 
             requestAnimationFrame(animateShip);
         };

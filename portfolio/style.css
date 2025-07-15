@@ -540,6 +540,7 @@ footer p {
     height: auto;
     z-index: 1000;
     pointer-events: none;
+    transform-origin: center top;
     transition: transform 0.1s linear;
 }
 
@@ -603,6 +604,8 @@ footer p {
     color: var(--highlight);
     font-size: 1.3rem;
     transition: color 0.3s ease;
+    width: 25px;
+    text-align: center;
 }
 
 .skill-category:hover h5 i {
