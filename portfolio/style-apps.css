@@ -67,6 +67,9 @@
         height: 35px;
         font-size: 0.75rem;
     }
+    .app-header h2{
+        font-size: 1.5rem;
+    }
 }
 
 .calculator {

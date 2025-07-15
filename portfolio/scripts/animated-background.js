@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const config = {
-        particleCount: 20,
+        particleCount: 50,
         minSpeed: 15,
         maxSpeed: 25,
         minSize: 20,
