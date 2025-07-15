@@ -60,22 +60,6 @@
     box-shadow: 0 0 15px var(--highlight);
 }
 
-@media (max-width: 768px) {
-    .app-header h2 {       
-       font-size: 2rem;
-    }
-
-    .back-to-dev-btn {
-        left:0;
-        top:5%;
-        width: 55px;
-        height: 55px;
-        font-size: 1rem;
-    }
-}
-
-
-
 .calculator {
     max-width: 350px;
     margin: 0 auto;
@@ -153,8 +137,8 @@
 
 .gallery-image {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover; 
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -189,11 +173,48 @@
     visibility: visible;
 }
 
+.lightbox-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 #lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+    flex-shrink: 1; 
+    flex-grow: 0;
+    max-width: 90%; 
+    max-height: 75%;
+    width: auto; 
+    height: auto; 
+    object-fit: contain; 
     border-radius: 10px;
     box-shadow: 0 0 40px var(--highlight);
+}
+
+#lightbox-caption {
+    flex-shrink: 0; 
+    color: var(--text);
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 15px;
+    max-width: 90%;
+    line-height: 1.5;
+}
+
+#lightbox-caption h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#lightbox-caption p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.85;
 }
 
 .lightbox-close {
@@ -223,6 +244,7 @@
     margin: 0 15px; 
     transition: all 0.3s ease;
     user-select: none;
+    flex-shrink: 0;
 }
 
 .nav-btn:hover {
@@ -232,6 +254,10 @@
 
 
 @media (max-width: 768px) {
+    #lightbox {
+        padding: 10px; 
+    }
+
     .nav-btn {
         width: 40px;
         height: 40px;
@@ -240,7 +266,20 @@
     }
 
     #lightbox img {
-        max-width: 75%;
+        max-width: 100%; 
+        max-height: 65vh;
+    }
+
+    #lightbox-caption {
+        margin-top: 10px;
+    }
+
+    #lightbox-caption h4 {
+        font-size: 1.1rem;
+    }
+
+    #lightbox-caption p {
+        font-size: 0.85rem;
     }
 }
 
@@ -346,8 +385,6 @@
     border-radius: 15px;
     box-shadow: 0 8px 35px var(--highlight);
 }
-
-/* --- ESTILOS AÑADIDOS PARA LA PÁGINA DEL MINIJUEGO --- */
 
 body.minigame-page {
     height: 100vh;

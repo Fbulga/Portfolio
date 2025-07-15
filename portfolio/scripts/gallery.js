@@ -1,22 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const imageUrls = [
-        "../images/UnrealManor.jpg",
-        "../images/UnrealManor.png",
-        "../images/UnrealManor2.jpg",
-        "../images/GooseGame.png",
-        "../images/extrañakawaii.png",
-        "../images/extrañakawaii2.png",
+
+    const imageData = [
+        {
+            src: "../images/UnrealManor.jpg",
+            title: "Unreal Manor - Exterior View",
+            description: "The Manor made in Blender and implemented inside Unreal 5."
+        },
+        {
+            src: "../images/UnrealManor.png",
+            title: "Unreal Manor - Tittle",
+            description: "Main tittle of the game."
+        },
+        {
+            src: "../images/UnrealManor2.jpg",
+            title: "Unreal Manor - Hall",
+            description: "The first view of the interior of the manor."
+        },
+        {
+            src: "../images/GooseGame.png",
+            title: "Goose Game - Cover Art",
+            description: "Cover Art of Goose."
+        },
+        {
+            src: "../images/extrañakawaii.png",
+            title: "Extraña Kawaii - Mei's room",
+            description: "Main Character's room."
+        },
+        {
+            src: "../images/extrañakawaii2.png",
+            title: "Extraña Kawaii - Cthuli dialog",
+            description: "Cthuli talking to Mei."
+        },
     ];
 
     
     const galleryGrid = document.querySelector('.gallery-grid');
 
     if (galleryGrid) {
-        imageUrls.forEach((url, index) => {
+        imageData.forEach((data, index) => {
             const img = document.createElement('img');
-            img.src = url;
-            img.alt = `Image ${index + 1}`;
+            img.src = data.src;
+            img.alt = data.title; 
             img.classList.add('gallery-image');
             galleryGrid.appendChild(img);
         });
@@ -26,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const galleryImages = Array.from(document.querySelectorAll('.gallery-image'));
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption'); 
     const closeBtn = document.querySelector('.lightbox-close');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
@@ -35,9 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentIndex = 0;
 
+    
+    function updateLightboxContent(index) {
+        const currentImageData = imageData[index];
+        lightboxImg.src = currentImageData.src;
+        lightboxImg.alt = currentImageData.title;
+        lightboxCaption.innerHTML = `<h4>${currentImageData.title}</h4><p>${currentImageData.description}</p>`;
+    }
+
     function openLightbox(index) {
         currentIndex = index;
-        lightboxImg.src = galleryImages[currentIndex].src;
+        updateLightboxContent(currentIndex);
         lightbox.classList.add('active');
     }
 
@@ -47,12 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showPrevImage() {
         currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-        lightboxImg.src = galleryImages[currentIndex].src;
+        updateLightboxContent(currentIndex);
     }
 
     function showNextImage() {
         currentIndex = (currentIndex + 1) % galleryImages.length;
-        lightboxImg.src = galleryImages[currentIndex].src;
+        updateLightboxContent(currentIndex);
     }
 
     galleryImages.forEach((image, index) => {
@@ -64,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', showNextImage);
     
     lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox || e.target === lightboxImg) {
+        if (e.target === lightbox) { 
             closeLightbox();
         }
     });

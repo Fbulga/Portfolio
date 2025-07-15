@@ -382,7 +382,7 @@ main {
 
 footer {
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 20px 80px; /* MODIFICADO: Aumentado el padding inferior */
     flex-shrink: 0;
     background-color: #2a2a2a;
     border-top: 3px solid var(--highlight);
@@ -497,3 +497,36 @@ footer p {
     text-decoration: none;
     cursor: pointer;
 }
+
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(150%); 
+    background-color: var(--highlight);
+    color: var(--text);
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.back-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); 
+}
+
+.back-to-top-btn:hover {
+    background-color: var(--text);
+    color: var(--textInverse);
+    box-shadow: 0 0 20px var(--text);
+}
+
