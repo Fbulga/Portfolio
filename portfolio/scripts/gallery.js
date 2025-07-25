@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Extraña Kawaii - Cthuli dialog",
             description: "Cthuli talking to Mei."
         },
+        
     ];
 
     
