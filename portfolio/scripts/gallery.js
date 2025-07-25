@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Extraña Kawaii - Cthuli dialog",
             description: "Cthuli talking to Mei."
         },
+        {
+            src: "../images/gyropong.jpg",
+            title: "Gyro Pong Header",
+            description: "Mobile game inspired by the classics Arkanoid and Pong"
+        },
         
     ];
 
