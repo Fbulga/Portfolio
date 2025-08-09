@@ -31,7 +31,6 @@ main {
     flex: 1 0 auto;
 }
 
-
 .header {
     position: fixed;
     top: 0;
@@ -64,6 +63,19 @@ main {
 .navbar-capsule a:hover {
     background-color: var(--highlight);
     color: var(--text);
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text);
+    margin: 5px 0;
+    transition: 0.4s;
 }
 
 .front_container {
@@ -112,7 +124,6 @@ main {
     display: block;
 }
 
-
 .front_button {
     position: absolute;
     top: 70%;
@@ -139,7 +150,6 @@ main {
     background-color: var(--text);
     box-shadow: 2px 2px 8px var(--text);
 }
-
 
 .section {
     padding: 30px 25px;
@@ -180,7 +190,6 @@ main {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
 
 .about-section ul {
     list-style-type: none;
@@ -317,7 +326,6 @@ main {
     width: 100%;
 }
 
-
 .section-subtitle {
     text-align: center;
     font-size: 1.1rem;
@@ -412,52 +420,6 @@ footer p {
     transform: scale(1.2);
 }
 
-
-@media (max-width: 992px) {
-    .proyects-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .front_button {
-        top: 75%;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .section {
-        padding: 40px 15px;
-    }
-
-    .section h2 {
-        font-size: 2.2rem;
-    }
-
-    .front_title {
-        padding-top: 2rem;
-        font-size: 10vw;
-    }
-
-    .front_subtitle {
-        display: none;
-    }
-
-    .front_button {
-        top: 90%;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .navbar-capsule a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
-}
-
-
 .modal {
     display: none;
     position: fixed;
@@ -550,7 +512,6 @@ footer p {
     height: auto;
 }
 
-
 .laser-beam {
     position: fixed;
     width: 4px;
@@ -562,7 +523,6 @@ footer p {
     pointer-events: none;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
-
 
 .skills-grid {
     display: grid;
@@ -698,4 +658,115 @@ footer p {
     top: 0;
     color: var(--highlight);
     font-size: 1.2rem;
+}
+
+/* === Media Queries para Responsividad === */
+
+@media (min-width:768px) {
+    .menu-image{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .proyects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .front_button {
+        top: 75%;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 70px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section h2 {
+        font-size: 2.2rem;
+    }
+
+    .front_title {
+        padding-top: 2rem;
+        font-size: 10vw;
+    }
+
+    .front_subtitle {
+        display: none;
+    }
+
+    .front_button {
+        display:none;
+    }
+    
+    .navbar-capsule {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(24, 24, 24, 0.95);
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .navbar-capsule.active {
+        display: flex; 
+    }
+
+    .navbar-capsule a {
+        padding: 20px;
+        text-align: center;
+        border-radius: 0;
+        width: 100%;
+        border-bottom: 1px solid #2a2a2a;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .menu-image {
+        position: absolute;
+        left: 15px; /* Posición en el lado izquierdo */
+        top: 50%;
+        transform: translateY(-50%);
+        height: 30px; /* Asegura la misma altura que el icono */
+    }
+
+    .header.menu-open .menu-image {
+        display: block; /* Muestra la imagen cuando la clase 'menu-open' está activa */
+    }
+
+    .header.menu-open .hamburger-menu {
+        /* Ajusta la posición del menú de hamburguesa si es necesario */
+        right: 15px;
+    }
 }

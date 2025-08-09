@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="../style-additions.css">
     <link rel="stylesheet" type="text/css" href="../style-apps.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar-capsule">
@@ -18,6 +21,12 @@
             <a href="../portfolio.html#about">About Me</a>
             <a href="../portfolio.html#contact">Contact</a>
         </nav>
+        <img class="menu-image" src="../images/gyropong.jpg" alt="Menú" style="display: none; height: 30px;">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
 
     <main>
@@ -27,10 +36,10 @@
                 <h2>Image Gallery</h2>
             </div>
             <p class="app-description">An interactive gallery with zoom and navigation</p>
-            
+
             <div class="gallery-grid"></div>
         </div>
-        
+
         <div id="lightbox">
             <button id="prev-btn" class="nav-btn">&lt;</button>
             <div class="lightbox-content-wrapper">
@@ -45,11 +54,15 @@
     <footer style="padding-bottom: 0px;">
         <p>© 2025 Franco Bulgarella. All Rights Reserved.</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/franco-bulgarella/" target="_blank" class="social-button"><img src="../../images/linkedinLogo.webp" alt="LinkedIn"></a>
-            <a href="https://github.com/Fbulga?tab=repositories" target="_blank" class="social-button"><img src="../../images/github.ico" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/franco-bulgarella/" target="_blank" class="social-button"><img
+                    src="../../images/linkedinLogo.webp" alt="LinkedIn"></a>
+            <a href="https://github.com/Fbulga?tab=repositories" target="_blank" class="social-button"><img
+                    src="../../images/github.ico" alt="GitHub"></a>
         </div>
     </footer>
-    
+
     <script src="../scripts/gallery.js"></script>
+    <script src="../scripts/portfolio.js"></script>
 </body>
+
 </html>
