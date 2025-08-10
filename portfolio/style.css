@@ -660,7 +660,6 @@ footer p {
     font-size: 1.2rem;
 }
 
-/* === Media Queries para Responsividad === */
 
 @media (min-width:768px) {
     .menu-image{
@@ -699,7 +698,7 @@ footer p {
     }
 
     .front_title {
-        padding-top: 2rem;
+        padding-top: 4rem;
         font-size: 10vw;
     }
 
@@ -755,18 +754,17 @@ footer p {
 
     .menu-image {
         position: absolute;
-        left: 15px; /* Posición en el lado izquierdo */
+        left: 15px;
         top: 50%;
         transform: translateY(-50%);
-        height: 30px; /* Asegura la misma altura que el icono */
+        height: 30px;
     }
 
     .header.menu-open .menu-image {
-        display: block; /* Muestra la imagen cuando la clase 'menu-open' está activa */
+        display: block;
     }
 
     .header.menu-open .hamburger-menu {
-        /* Ajusta la posición del menú de hamburguesa si es necesario */
         right: 15px;
     }
 }
